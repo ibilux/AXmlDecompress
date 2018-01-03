@@ -1,4 +1,3 @@
-
 package com.hq.axmldecompress;
 
 import java.io.File;
@@ -11,7 +10,6 @@ import org.xml.sax.SAXException;
  *
  * @author bilux (i.bilux@gmail.com)
  */
-
 public class AXmlDecompress {
 
     /**
@@ -23,16 +21,16 @@ public class AXmlDecompress {
         String fileName = args[0];
         String xml;
         try {
-            if(fileName.endsWith(".apk")){
+            if (fileName.endsWith(".apk")) {
                 xml = ApkTool.getPackage(fileName);
-            }else if(fileName.endsWith(".xml")){
+            } else if (fileName.endsWith(".xml")) {
                 File file = new File(fileName);
                 FileInputStream fin = new FileInputStream(file);
-                byte buf[] = new byte[(int)file.length()];
-                fin.read(buf);            
+                byte buf[] = new byte[(int) file.length()];
+                fin.read(buf);
                 xml = Parser.decompressXML(buf);
                 fin.close();
-            }else{
+            } else {
                 xml = "Non valide file.";
             }
         } catch (IOException | ParserConfigurationException | SAXException ex) {
@@ -40,5 +38,5 @@ public class AXmlDecompress {
         }
         System.out.println(xml);
     }
-    
+
 }
