@@ -1,5 +1,5 @@
 
-package axmldecompress;
+package com.hq.axmldecompress;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,4 +1,4 @@
-package axmldecompress;
+package com.hq.axmldecompress;
 
 import java.io.IOException;
 import java.io.InputStream;
