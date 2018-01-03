@@ -7,7 +7,6 @@ import java.io.IOException;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
-
 /**
  *
  * @author bilux (i.bilux@gmail.com)

@@ -11,6 +11,7 @@ import org.xml.sax.SAXException;
  *
  * @author bilux (i.bilux@gmail.com)
  */
+
 public class ApkTool {
 
     // get apk information such as app name, version and icon.

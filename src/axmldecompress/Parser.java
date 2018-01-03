@@ -4,6 +4,7 @@ package axmldecompress;
  *
  * @author bilux (i.bilux@gmail.com)
  */
+
 public class Parser {
 
     // decompressXML -- Parse the 'compressed' binary form of Android XML docs
